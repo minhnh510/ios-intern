@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0C477A20108249004986AE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C477920108249004986AE /* Dog.swift */; };
+		0B0C477C2010825E004986AE /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C477B2010825E004986AE /* DogViewModel.swift */; };
 		0B5FE86520103A5B00BCD97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5FE86420103A5B00BCD97C /* AppDelegate.swift */; };
 		0B5FE86720103A5B00BCD97C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5FE86620103A5B00BCD97C /* ViewController.swift */; };
 		0B5FE86A20103A5B00BCD97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B5FE86820103A5B00BCD97C /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0C477920108249004986AE /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		0B0C477B2010825E004986AE /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
 		0B5FE86120103A5B00BCD97C /* App-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B5FE86420103A5B00BCD97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B5FE86620103A5B00BCD97C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				0B5FE86420103A5B00BCD97C /* AppDelegate.swift */,
+				0B0C477920108249004986AE /* Dog.swift */,
+				0B0C477B2010825E004986AE /* DogViewModel.swift */,
 				0B5FE86620103A5B00BCD97C /* ViewController.swift */,
 				0B5FE86820103A5B00BCD97C /* Main.storyboard */,
 				0B5FE86B20103A5B00BCD97C /* Assets.xcassets */,
@@ -138,6 +144,8 @@
 			files = (
 				0B5FE86720103A5B00BCD97C /* ViewController.swift in Sources */,
 				0B5FE86520103A5B00BCD97C /* AppDelegate.swift in Sources */,
+				0B0C477A20108249004986AE /* Dog.swift in Sources */,
+				0B0C477C2010825E004986AE /* DogViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

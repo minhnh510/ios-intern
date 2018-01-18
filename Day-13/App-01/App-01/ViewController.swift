@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var petDesc: UILabel!
+    @IBOutlet weak var petLegs: UILabel!
+    @IBOutlet weak var petName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("Hello world")
-        print("Hello world")
+        //print("Hello world")
+        //print("Hello world")
+        
+        let viewModel = DogViewModel(name: "Alaska")
+        petName.text = viewModel.dogName
+        petLegs.text = viewModel.dogLeg
+        petDesc.text = viewModel.dogNameAndLegs
     }
 
     override func didReceiveMemoryWarning() {
