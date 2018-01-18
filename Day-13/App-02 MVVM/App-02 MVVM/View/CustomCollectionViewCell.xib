@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="gTV-IL-0wX" customClass="CustomCollectionViewCell" customModule="App_02_MVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ao" translatesAutoresizingMaskIntoConstraints="NO" id="FOb-OF-5Qr">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="rBs-Ez-62e"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEC-jG-cdc">
+                        <rect key="frame" x="0.0" y="100" width="150" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="gpb-rq-8Ou"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMU-gx-ew5">
+                        <rect key="frame" x="0.0" y="125" width="150" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rMU-gx-ew5" secondAttribute="trailing" id="B3J-uC-aJS"/>
+                <constraint firstItem="pEC-jG-cdc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="F5e-Il-Wve"/>
+                <constraint firstItem="FOb-OF-5Qr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HtC-yo-aSh"/>
+                <constraint firstAttribute="bottom" secondItem="rMU-gx-ew5" secondAttribute="bottom" id="Hw6-Ne-CvQ"/>
+                <constraint firstItem="rMU-gx-ew5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JBt-8w-XjH"/>
+                <constraint firstAttribute="trailing" secondItem="FOb-OF-5Qr" secondAttribute="trailing" id="UNI-C5-cvo"/>
+                <constraint firstItem="FOb-OF-5Qr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jar-FY-xFl"/>
+                <constraint firstAttribute="trailing" secondItem="pEC-jG-cdc" secondAttribute="trailing" id="sZt-z3-oBs"/>
+                <constraint firstItem="pEC-jG-cdc" firstAttribute="top" secondItem="FOb-OF-5Qr" secondAttribute="bottom" id="vpD-y2-S7a"/>
+                <constraint firstItem="rMU-gx-ew5" firstAttribute="top" secondItem="pEC-jG-cdc" secondAttribute="bottom" id="wvm-Qm-Dri"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="95" height="63"/>
+            <connections>
+                <outlet property="productImage" destination="FOb-OF-5Qr" id="KhF-20-DoM"/>
+                <outlet property="productName" destination="pEC-jG-cdc" id="VgW-Hb-Jgv"/>
+                <outlet property="productPrice" destination="rMU-gx-ew5" id="715-sz-9B1"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="60"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ao" width="233" height="233"/>
+    </resources>
+</document>
